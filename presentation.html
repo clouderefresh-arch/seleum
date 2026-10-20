@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Презентация ОЛС для заказчиков</title>
+    <link rel="icon" href="/brand/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&family=Unbounded:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/deck.css" />
+  </head>
+  <body class="deck">
+    <div class="deck-bar">
+      <a href="index.html">На сайт</a>
+      <button type="button" id="prev">Назад</button>
+      <button type="button" id="next">Дальше</button>
+      <button type="button" id="print">Сохранить PDF</button>
+      <p class="counter" id="counter" aria-live="polite">1 из 7</p>
+    </div>
+    <p class="hint">Листайте стрелками клавиатуры или проведите пальцем по слайду. Для письма клиенту: «Сохранить PDF».</p>
+    <div class="stage">
+      <section class="slide cover" aria-label="Обложка">
+        <img class="cover-logo" src="/brand/ols-logo.png" alt="ОЛС" />
+        <h1>Медикаменты. Свой транспорт.</h1>
+        <p class="sub">Город и Московская область. Материал для потенциального заказчика.</p>
+        <svg class="cover-yard" viewBox="0 0 760 150" aria-hidden="true">
+          <g fill="none" stroke-linecap="round">
+            <path class="cover-streak" d="M8 78 H520" stroke="#1856A3" stroke-width="3" />
+            <path class="cover-streak" d="M20 98 H700" stroke="#7A2A78" stroke-width="2" />
+            <path class="cover-streak" d="M4 118 H750" stroke="#E61C1F" stroke-width="4" />
+          </g>
+          <g class="cover-truck">
+            <g transform="translate(0 30)">
+            <g transform="translate(36 78)">
+              <g class="cover-wheel">
+                <circle r="10" fill="#050505" stroke="#F4F6FA" stroke-width="2" />
+                <circle r="3" fill="#E61C1F" />
+              </g>
+            </g>
+            <g transform="translate(92 78)">
+              <g class="cover-wheel">
+                <circle r="10" fill="#050505" stroke="#F4F6FA" stroke-width="2" />
+                <circle r="3" fill="#E61C1F" />
+              </g>
+            </g>
+            <rect x="8" y="28" width="110" height="46" fill="#12182A" stroke="#F4F6FA" stroke-width="2" />
+            <rect x="8" y="50" width="110" height="6" fill="#E61C1F" />
+            <path d="M118 36 H150 L168 54 V74 H118 Z" fill="#1856A3" stroke="#F4F6FA" stroke-width="2" />
+            </g>
+          </g>
+        </svg>
+      </section>
+
+      <section class="slide" aria-label="Кто мы">
+        <div class="slide-top">
+          <img class="mini-logo" src="/brand/ols-logo.png" alt="" />
+          <span>ООО «ОЛС»</span>
+        </div>
+        <div class="slide-rule"></div>
+        <h2>Кто мы</h2>
+        <div class="cols">
+          <div class="stack">
+            <p>Общество с ограниченной ответственностью «Юнайтед Лоджистикс Системс».</p>
+            <p>Свой транспорт, городские и областные маршруты. Основной груз — медикаменты.</p>
+            <p>На рынке с 2019 года.</p>
+          </div>
+          <div class="stack">
+            <p>База: Московская область, городской округ Подольск, деревня Коледино, Промышленная улица, 2.</p>
+            <p>Это индустриальный район у Симферопольского шоссе, около 20 км от МКАД.</p>
+          </div>
+        </div>
+        <div class="slide-foot">
+          <span>+7 903 579-58-51</span>
+          <span>info@olslogistic.ru</span>
+        </div>
+      </section>
+
+      <section class="slide" aria-label="Что везём">
+        <div class="slide-top">
+          <img class="mini-logo" src="/brand/ols-logo.png" alt="" />
+          <span>Груз</span>
+        </div>
+        <div class="slide-rule"></div>
+        <h2>Что везём</h2>
+        <div class="cols">
+          <div>
+            <p class="sub">Медикаменты — основной профиль рейса.</p>
+            <p>Другой груз берём, когда он совпадает с маршрутом и мы подтверждаем условия до выезда.</p>
+          </div>
+          <div>
+            <p class="sub">Температура и цена</p>
+            <p>Если нужен температурный режим, укажите диапазон в заявке. До выезда подтвердим, что можем держать его в пути.</p>
+            <p>Стоимость называем после заявки: маршрут, места или вес, дата забора.</p>
+          </div>
+        </div>
+        <div class="slide-foot">
+          <span>+7 903 579-58-51</span>
+          <span>info@olslogistic.ru</span>
+        </div>
+      </section>
+
+      <section class="slide" aria-label="Как проходит рейс">
+        <div class="slide-top">
+          <img class="mini-logo" src="/brand/ols-logo.png" alt="" />
+          <span>Рейс</span>
+        </div>
+        <div class="slide-rule"></div>
+        <h2>Как проходит рейс</h2>
+        <ol>
+          <li>Заявка: откуда, куда, груз, места, когда забрать.</li>
+          <li>Подтверждение: берём ли рейс и на каких условиях.</li>
+          <li>Рейс: выделенная машина компании, город или область.</li>
+          <li>Документы: закрывающие по факту перевозки.</li>
+        </ol>
+        <div class="slide-foot">
+          <span>+7 903 579-58-51</span>
+          <span>info@olslogistic.ru</span>
+        </div>
+      </section>
+
+      <section class="slide" aria-label="Что написать">
+        <div class="slide-top">
+          <img class="mini-logo" src="/brand/ols-logo.png" alt="" />
+          <span>Заявка</span>
+        </div>
+        <div class="slide-rule"></div>
+        <h2>Что написать в заявке</h2>
+        <div class="cols">
+          <ul>
+            <li>Компания и имя</li>
+            <li>Телефон</li>
+            <li>Откуда забрать</li>
+            <li>Куда доставить</li>
+          </ul>
+          <ul>
+            <li>Медикаменты или другой груз</li>
+            <li>Число мест или вес</li>
+            <li>Дата и время забора</li>
+            <li>Температурный диапазон, если нужен</li>
+          </ul>
+        </div>
+        <div class="slide-foot">
+          <span>+7 903 579-58-51</span>
+          <span>info@olslogistic.ru</span>
+        </div>
+      </section>
+
+      <section class="slide" aria-label="Контакты">
+        <div class="slide-top">
+          <img class="mini-logo" src="/brand/ols-logo.png" alt="" />
+          <span>Связь</span>
+        </div>
+        <div class="slide-rule"></div>
+        <h2>Как отправить запрос</h2>
+        <p class="sub">Позвоните диспетчеру или напишите письмо. Заявку на сайте можно собрать той же формой.</p>
+        <p><a class="phone-xl" href="tel:+79035795851">+7 903 579-58-51</a></p>
+        <p><a href="mailto:info@olslogistic.ru">info@olslogistic.ru</a></p>
+        <p class="sub">Московская область, городской округ Подольск, деревня Коледино, Промышленная улица, 2.</p>
+        <div class="slide-foot">
+          <span>ООО «ОЛС»</span>
+          <span>olslogistic.ru</span>
+        </div>
+      </section>
+
+      <section class="slide" aria-label="Реквизиты">
+        <div class="slide-top">
+          <img class="mini-logo" src="/brand/ols-logo.png" alt="" />
+          <span>Реквизиты</span>
+        </div>
+        <div class="slide-rule"></div>
+        <h2>Для договора</h2>
+        <dl class="reqs">
+          <dt>Название</dt>
+          <dd>ООО «ОЛС», полное: ООО «Юнайтед Лоджистикс Системс»</dd>
+          <dt>ИНН / КПП</dt>
+          <dd>7728469506 / 771001001</dd>
+          <dt>ОГРН</dt>
+          <dd>1197746287881</dd>
+          <dt>ОКПО</dt>
+          <dd>39286403</dd>
+          <dt>Юр. адрес</dt>
+          <dd>127006, г. Москва, ул. Малая Дмитровка, д. 23/15, стр. 1</dd>
+          <dt>База</dt>
+          <dd>Московская область, г.о. Подольск, д. Коледино, ул. Промышленная, д. 2</dd>
+          <dt>Директор</dt>
+          <dd>Воркожокова Оксана Сергеевна</dd>
+        </dl>
+        <div class="slide-foot">
+          <span>+7 903 579-58-51</span>
+          <span>info@olslogistic.ru</span>
+        </div>
+      </section>
+    </div>
+    <script type="module" src="/src/presentation.js"></script>
+  </body>
+</html>
