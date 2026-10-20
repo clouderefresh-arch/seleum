@@ -1,0 +1,109 @@
+@import "./tokens.css";
+
+body.sheet-page {
+  background: #c5cad3;
+  margin: 0;
+}
+
+.toolbar {
+  width: min(210mm, calc(100% - 24px));
+  margin: 16px auto;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.toolbar button, .toolbar a {
+  min-height: 44px;
+  padding: 0 14px;
+  background: var(--night);
+  color: white;
+  border: 0;
+  font-family: var(--display);
+  font-size: 0.92rem;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.paper {
+  width: min(210mm, calc(100% - 24px));
+  min-height: 297mm;
+  margin: 0 auto 24px;
+  background: white;
+  color: var(--ink);
+  padding: 14mm 16mm 12mm;
+  box-shadow: 0 12px 40px rgba(10, 16, 30, 0.18);
+  display: flex;
+  flex-direction: column;
+}
+
+.paper-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.paper-logo { height: 22mm; width: auto; }
+
+.paper-id { text-align: right; max-width: 90mm; }
+
+.paper-id strong {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: 1.15rem;
+  letter-spacing: -0.03em;
+}
+
+.paper-id p { font-size: 0.82rem; color: var(--muted); margin-top: 4px; }
+
+.rule {
+  height: 3px;
+  margin-top: 5mm;
+  background: linear-gradient(90deg, #1856a3, #7a2a78 52%, #e61c1f);
+  transform-origin: left center;
+}
+
+.meta, .whom {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 8mm;
+  font-size: 1rem;
+}
+
+.body-space { flex: 1; min-height: 90mm; }
+
+.sign { margin-top: 8mm; }
+
+.sign-line { margin-top: 12mm; }
+
+.paper-foot {
+  margin-top: 6mm;
+  font-size: 0.78rem;
+  color: #2a3144;
+  display: grid;
+  gap: 2px;
+}
+
+.req-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+}
+
+@media print {
+  body.sheet-page { background: white; }
+  .toolbar { display: none; }
+  .paper {
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+  @page { size: A4; margin: 12mm; }
+}

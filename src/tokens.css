@@ -1,0 +1,61 @@
+:root {
+  --night: #000000;
+  --ink: #14192a;
+  --paper: #f4f6fa;
+  --sheet: #ffffff;
+  --blue: #1856a3;
+  --blue-deep: #0f3f86;
+  --red: #e61c1f;
+  --red-deep: #9f0d16;
+  --muted: #3e4860;
+  --line: #d5dcea;
+  --on-dark: #f4f6fa;
+  --on-dark-dim: #c9d3e4;
+  --display: "Unbounded", "Arial Narrow", sans-serif;
+  --body: "Literata", "Iowan Old Style", Georgia, serif;
+  --gap: clamp(72px, 10vw, 120px);
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: auto; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 1.125rem;
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+img { max-width: 100%; height: auto; }
+
+a { color: inherit; }
+
+:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--blue);
+  color: white;
+}
+
+h1, h2, h3 {
+  font-family: var(--display);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+  margin: 0;
+}
+
+p { margin: 0; }
+
+.wrap {
+  width: min(1120px, calc(100% - 48px));
+  margin-inline: auto;
+}
